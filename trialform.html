@@ -51,7 +51,7 @@
       id="form"
       class="container m-5 box"
       method="POST"
-      action="https://script.google.com/macros/s/AKfycbxdJgSIt_KI_PxWUdFkIq0qOkyWhqlpWkw44kNZVZApa2L4-Ez19UOt6pVN35OEZiJTHA/exec"
+      action="https://script.google.com/macros/s/AKfycbxkc_hzbyRIaWpC4hra6AEFUY9zBBJzKzJ6EuzY3jTNzGw4tdGeyHdPh-OSqx50d7MeyA/exec"
       enctype="multipart/form-data"
       style="
         border-radius: 10px;
@@ -87,9 +87,31 @@
               <option value="Abtik Startup Advisor Pvt Ltd">
                 Abtik Startup Advisor Private Limited
               </option>
+              <option value="Razorpay Abtik Services LLP">
+                Razorpay Abtik Services LLP
+              </option>
+              <option value="Razorpay Abtik Financial Services Pvt Ltd">
+                Razorpay Abtik Financial Services Private Limited
+              </option>
             </select>
           </div>
           <span class="icon is-left"><i class="fas fa-university"></i></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Payment Type</label>
+        <div class="control has-icons-left">
+          <div class="select is-fullwidth">
+            <select name="Payment Type" required>
+              <option value="" disabled selected>Select Payment Type</option>
+              <option value="Remaining Payment">Remaining Payment</option>
+              <option value="New Payment Option">New Payment Option</option>
+            </select>
+          </div>
+          <span class="icon is-left"
+            ><i class="fas fa-money-check-alt"></i
+          ></span>
         </div>
       </div>
 
@@ -266,7 +288,7 @@
 
       <div class="equal-fields">
         <div class="field">
-          <label class="label">Total Payment Amount(without GST)</label>
+          <label class="label">Total Payment Amount</label>
           <div class="control has-icons-left">
             <input
               class="input"
@@ -308,7 +330,7 @@
 
       <div class="equal-fields">
         <div class="field">
-          <label class="label">Received Amount - Including GST</label>
+          <label class="label">Received Amount</label>
           <div class="control has-icons-left">
             <input
               class="input"
@@ -337,14 +359,14 @@
 
       <div class="equal-fields">
         <div class="field">
-          <label class="label">Remaining Amount - Including GST</label>
+          <label class="label">Remaining Amount</label>
           <div class="control has-icons-left">
             <input
               class="input"
               type="text"
               id="remainingAmount"
               name="Remaining Amount"
-              readonly
+              placeholder="Remaining Amount"
             />
             <span class="icon is-left"
               ><i class="fa-duotone fa-solid fa-indian-rupee-sign"></i
