@@ -104,23 +104,23 @@ function addMobileField() {
   mobileContainer.appendChild(newMobileDiv);
 }
 
-function calculateAmounts() {
-  const totalAmount =
-    parseFloat(document.getElementById("totalAmount").value) || 0;
-  const gstPercentage = 18;
-  const receivedAmount =
-    parseFloat(document.getElementById("receivedAmount").value) || 0;
+// function calculateAmounts() {
+//   const totalAmount =
+//     parseFloat(document.getElementById("totalAmount").value) || 0;
+//   const gstPercentage = 18;
+//   const receivedAmount =
+//     parseFloat(document.getElementById("receivedAmount").value) || 0;
 
-  // Calculate GST
-  const gstAmount = (totalAmount * gstPercentage) / 100;
-  const totalWithGst = totalAmount + gstAmount;
+//   // Calculate GST
+//   const gstAmount = (totalAmount * gstPercentage) / 100;
+//   const totalWithGst = totalAmount + gstAmount;
 
-  // Calculate Remaining Amount
-  const remainingAmount = totalWithGst - receivedAmount;
+//   // Calculate Remaining Amount
+//   const remainingAmount = totalWithGst - receivedAmount;
 
-  // Display Remaining Amount
-  document.getElementById("remainingAmount").value = remainingAmount.toFixed(2);
-}
+//   // Display Remaining Amount
+//   document.getElementById("remainingAmount").value = remainingAmount.toFixed(2);
+// }
 
 function handleFileSelection() {
   const fileInput = document.getElementById("fileUpload");
@@ -229,7 +229,7 @@ document.getElementById("form").addEventListener("submit", async function (e) {
 
     // Send the payload to the server
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbxdJgSIt_KI_PxWUdFkIq0qOkyWhqlpWkw44kNZVZApa2L4-Ez19UOt6pVN35OEZiJTHA/exec",
+      "https://script.google.com/macros/s/AKfycbxkc_hzbyRIaWpC4hra6AEFUY9zBBJzKzJ6EuzY3jTNzGw4tdGeyHdPh-OSqx50d7MeyA/exec",
       {
         method: "POST",
         body: JSON.stringify(payload),
