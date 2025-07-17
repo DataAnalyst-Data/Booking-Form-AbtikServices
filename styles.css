@@ -44,7 +44,7 @@ body {
   width: 100%;
 }
 .field {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .control span {
   color: #4a90e2;
@@ -127,4 +127,22 @@ body.modal-active {
   max-width: 200px; /* Limit the maximum width */
   border-radius: 10px; /* Rounded corners */
   margin-top: 0; /* Space between input and image */
+}
+.title.is-4 {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.columns {
+  margin-bottom: 0.25rem;
+}
+
+hr {
+  border: 0;
+  height: 1.3px;
+  background: #e0e0e0;
+  margin: 10px 0;
 }
