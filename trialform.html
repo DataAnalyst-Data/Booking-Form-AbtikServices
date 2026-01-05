@@ -37,12 +37,24 @@
     <section class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title" style="font-size: 1.5rem">
-            Abtik Services Booking Form
-          </h1>
-          <h2 class="subtitle" style="font-size: 1rem">
-            Effortlessly Manage Your Bookings
-          </h2>
+          <div class="columns is-vcentered">
+            <!-- Logo -->
+            <div class="column is-narrow" style="padding: 0 1rem;">
+              <img
+                src="final form (1).png"
+                alt="Abtik Services Logo"
+                style="max-height: 70px"
+              />
+            </div>
+
+            <!-- Text -->
+            <div class="column" style="text-align: left; padding: 0;  ">
+              <h1 class="title" style="font-size: 1.2rem">Abtik Booking Form</h1>
+              <h2 class="subtitle" style="font-size: 1rem">
+                Effortlessly Manage Your Bookings
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -51,7 +63,7 @@
       id="form"
       class="container m-5 box"
       method="POST"
-      action="https://script.google.com/macros/s/AKfycbwqKSWduydJps1FevPCaT114Pm2SrAQKJE2-A7KnJ66ybUOOMCUzbUjh2FAi_D9gu7z0A/execc"
+      action="https://script.google.com/macros/s/AKfycbxnXUqbOGGhtL7kJGowNJ_jA-dkGq6zRG0RbSguq0JGaEpSOU4q9xlQasQh-E6AUIIKKQ/exec"
       enctype="multipart/form-data"
       style="
         border-radius: 10px;
@@ -104,9 +116,7 @@
                   <option value="Abtik digital Pvt Ltd">
                     Abtik Digital Private Limited
                   </option>
-                  <option value="PDC">
-                    PDC
-                  </option>
+                  <option value="PDC">PDC</option>
                   <option value="Abtik Services(Partnership)">
                     Abtik Services(Partnership)
                   </option>
@@ -205,7 +215,7 @@
       </script>
 
       <h3 class="title is-4">Client Information</h3>
-      <hr>
+      <hr />
       <div class="columns">
         <div class="column is-one-third">
           <div class="field">
@@ -231,7 +241,9 @@
                 placeholder="Enter Company Name"
                 name="Company Name"
               />
-              <span class="icon is-left"><i class="fa-solid fa-building"></i></span>
+              <span class="icon is-left"
+                ><i class="fa-solid fa-building"></i
+              ></span>
             </div>
           </div>
         </div>
@@ -255,11 +267,13 @@
         </div>
       </div>
       <div class="columns">
-        <div class="column is-half">
+        <div class="column is-one-third">
           <div class="field">
             <label class="label">Client Email</label>
             <div class="control has-icons-left" id="emailContainer">
-              <div style="display: flex; align-items: center; margin-bottom: 10px">
+              <div
+                style="display: flex; align-items: center; margin-bottom: 10px"
+              >
                 <input
                   class="input"
                   type="email"
@@ -289,11 +303,13 @@
           </div>
         </div>
 
-        <div class="column is-half">
+        <div class="column is-one-third">
           <div class="field">
             <label class="label">Client Mobile No.</label>
             <div class="control has-icons-left" id="mobileContainer">
-              <div style="display: flex; align-items: center; margin-bottom: 10px">
+              <div
+                style="display: flex; align-items: center; margin-bottom: 10px"
+              >
                 <input
                   class="input"
                   type="number"
@@ -316,6 +332,23 @@
             </div>
           </div>
         </div>
+        <div class="column is-one-third">
+          <div class="field">
+            <label class="label">Industry / Sector</label>
+            <div class="control has-icons-left">
+              <input
+                class="input"
+                type="text"
+                placeholder="Enter Industry/Sector"
+                name="Industry/Sector Name"
+                required
+              />
+              <span class="icon is-left"
+                ><i class="fa-solid fa-building"></i
+              ></span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <h3 class="title is-4">Service Details</h3>
@@ -330,7 +363,9 @@
               <option value="Services">Services</option>
               <option value="Digital Services">Digital Services</option>
               <option value="Financial Service">Financial Service</option>
-              <option value="Recruitment Consultancy">Recruitment Consultancy</option>
+              <option value="Recruitment Consultancy">
+                Recruitment Consultancy
+              </option>
             </select>
           </div>
           <span class="icon is-left"
@@ -466,7 +501,7 @@
         </div>
       </div>
 
-      <div class="equal-fields" style="margin-bottom: 2rem;">
+      <div class="equal-fields" style="margin-bottom: 2rem">
         <div class="field">
           <label class="label">After Fund Disbursement(%)</label>
           <div class="control has-icons-left">
@@ -616,10 +651,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
