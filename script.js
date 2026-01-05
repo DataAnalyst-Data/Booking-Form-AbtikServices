@@ -229,7 +229,7 @@ document.getElementById("form").addEventListener("submit", async function (e) {
 
     // Send the payload to the server
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbwqKSWduydJps1FevPCaT114Pm2SrAQKJE2-A7KnJ66ybUOOMCUzbUjh2FAi_D9gu7z0A/exec",
+      "https://script.google.com/macros/s/AKfycbxnXUqbOGGhtL7kJGowNJ_jA-dkGq6zRG0RbSguq0JGaEpSOU4q9xlQasQh-E6AUIIKKQ/exec",
       {
         method: "POST",
         body: JSON.stringify(payload),
